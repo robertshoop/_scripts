@@ -1,2 +1,2 @@
 # Scripts
-Below are various scripts I have hobbled together over the years.
+The sub folders are various scripts I have hobbled together over the years.
