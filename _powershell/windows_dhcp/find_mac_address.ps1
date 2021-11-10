@@ -1,0 +1,1 @@
+Get-DhcpServerv4Scope | Get-DhcpServerv4Lease -EA SilentlyContinue -ClientId ENTER-MAC-ADDRESS-HERE-WITH-DASHES
