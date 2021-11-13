@@ -1,0 +1,3 @@
+$dhcpServerName = ""
+$ipAddress = ""
+$macAddress = ""
