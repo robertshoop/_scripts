@@ -1,3 +1,4 @@
+# Use this to have Linux Mint use SMB v3 when connecting to network shares, by default it does not as of Linux Mint 20.1
 #!/bin/bash
 cd /etc/samba/smb.conf
 while IFS= read -r line
