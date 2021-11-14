@@ -19,7 +19,8 @@ Connect-VIServer -Server $esxServerName
 
 # Imports the vApp with the varibles above
 Import-vApp -Source $sourceFile -VMHost $esxServerName -Name $vmNewName
-
-Disconnect-VIServer
-
+Write-Host "`n"
 Write-Host "Your VM has been successfully uploaded!" -foregroundcolor green -backgroundcolor black
+Write-Host "`n"
+Write-Host "Do you wish to disconnect your vSphere session?"
+Disconnect-VIServer
