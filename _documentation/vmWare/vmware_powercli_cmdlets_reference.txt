@@ -1,6 +1,6 @@
 # vmWare PowerCLI cmdlets - Reference
 # To install PowerCLI
-
+Install-Module VMware.PowerCLI -Scope CurrentUser
 
 # To disable SSL checking (don't use on production machines)
 Set-PowerCLIConfiguration -InvalidCertificateAction Ignore -Confirm:$false
