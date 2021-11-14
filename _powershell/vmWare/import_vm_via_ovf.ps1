@@ -5,7 +5,7 @@ $sourceFile = "C:\_vmware\win11-client-01\win11-client-01.ovf"
 $esxServerName = "buzzesx01"
 $vmNewName = "win11-client-03"
 
-Read-Host = ""
+Write-Host "Connecting to vSphere / ESX host." -foregroundcolor green -backgroundcolor black
 
 Connect-VIServer -Server $esxServerName
 
