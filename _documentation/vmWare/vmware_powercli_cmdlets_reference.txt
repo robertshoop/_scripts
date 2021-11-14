@@ -1,4 +1,7 @@
 # vmWare PowerCLI cmdlets - Reference
+# To install PowerCLI
+
+
 # To disable SSL checking (don't use on production machines)
 Set-PowerCLIConfiguration -InvalidCertificateAction Ignore -Confirm:$false
 
