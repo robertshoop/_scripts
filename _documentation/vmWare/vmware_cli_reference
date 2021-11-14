@@ -1,0 +1,2 @@
+# Setting perferred hostname (use this to have vSphere / ESXi send hostname info from itself to the local DHCP server):
+esxcli system settings advanced set -o /Misc/PreferredHostName -s buzzesx01.trailerpark.local
