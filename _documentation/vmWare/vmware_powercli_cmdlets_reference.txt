@@ -1,3 +1,11 @@
 # vmWare PowerCLI cmdlets - Reference
 # To disable SSL checking (don't use on production machines)
 Set-PowerCLIConfiguration -InvalidCertificateAction Ignore -Confirm:$false
+
+# Exporting VApps to local machine running PowerCLI
+# Places the file in C:\_vmware
+Get-VM -Name win11-client-01 | Export-VApp -Destination C:\_vmware -Format OVA
+
+# Importing VApps from local machine running PowerCLI
+# Place the file in C:\_vmware
+Import-vApp -Source "C:\_vmware\" -VMHost 192.168.1.117
