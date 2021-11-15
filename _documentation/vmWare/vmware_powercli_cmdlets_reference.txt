@@ -12,3 +12,14 @@ Get-VM -Name win11-client-01 | Export-VApp -Destination C:\_vmware -Format OVA
 # Importing VApps from local machine running PowerCLI
 # Place the file in C:\_vmware
 Import-vApp -Source "C:\_vmware\" -VMHost 192.168.1.117
+
+# Using Start-VM, Shutdown-VMGuest, and Stop-VM
+#
+# Start-VM - Will start a VM
+# Example: Start-VM -VM XP-Pro -Confirm:$false
+#
+# Shutdown-VMGuest will gracefully shut down the VM if vmWare / open-vm tools are installed
+# Example: Shutdown-VMGuest -VM XP-Pro -Confirm:$false
+# 
+# Stop-VM will turn off the VM right away (only use in emergency situations)!
+# Example: Stop-VM -VM XP-Pro -Confirm:$false
