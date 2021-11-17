@@ -43,6 +43,15 @@ echo
 echo "What would you like the password to be for the Valheim server"
 echo "NOTE: The password needs to be at least 5 characters and the password can't be in the server name!"
 read valServerPassword
+
+# Use sed to change the properties of the /usr/games/valheim/start_server.sh file
+
+sed -i "s/My server/$valServerName/g" "/usr/games/valheim/start_server.sh"
+sed -i "s/2456/$valServerPort/g" "/usr/games/valheim/start_server.sh"
+sed -i "s/Dedicated/$valWorldName/g" "/usr/games/valheim/start_server.sh"
+sed -i "s/secret/$valServerPassword/g" "/usr/games/valheim/start_server.sh"
+
+# Displays new server information
 echo
 echo "The following changes have been made to the Valheim Dedicated Server:"
 echo
@@ -54,10 +63,12 @@ echo
 echo "Run /usr/games/valheim/start_server.sh to start your Valheim Dedicated Server!"
 echo
 
-# Use sed to change the properties of the /usr/games/valheim/start_server.sh file
-sed -i "s/My server/$valServerName/g" "/usr/games/valheim/start_server.sh"
-sed -i "s/2456/$valServerPort/g" "/usr/games/valheim/start_server.sh"
-sed -i "s/Dedicated/$valWorldName/g" "/usr/games/valheim/start_server.sh"
-sed -i "s/secret/$valServerPassword/g" "/usr/games/valheim/start_server.sh"
-
-# Starts the dedicated server
+# Asks if the user wants to start the dedicated server
+echo "Do you wish to start the dedicated server now?"
+echo
+select yn in "Yes" "No"; do
+    case $yn in
+        Yes ) cd /usr/games/valheim/ && ./start_server.sh;;
+        No ) exit;;
+    esac
+done
