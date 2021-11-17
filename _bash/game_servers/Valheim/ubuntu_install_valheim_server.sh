@@ -1,10 +1,11 @@
-# WORK IN PROGRESS - v1
 #!/bin/bash
+
+# WORK IN PROGRESS - v1
 # Using Valve's documentation from https://developer.valvesoftware.com/wiki/SteamCMD to create this script
 # Tested script on Ubuntu 21.10 with latest updates as of 11-16-2021
-#
+
 # Assumptions are there is a user account named steam on the system already (default user for a Ubuntu Server install).
-#
+
 # Install multiverse repo, add i386 architecture, and update repos
 sudo add-apt-repository multiverse -y
 sudo dpkg --add-architecture i386
