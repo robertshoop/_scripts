@@ -11,7 +11,7 @@ sudo add-apt-repository multiverse -y
 sudo dpkg --add-architecture i386
 sudo apt update
 
-# Dependancies before instlal steamcmd
+# Dependancies before installing steamcmd
 sudo apt install lib32gcc-s1 -y
 
 # Auto accept Steam EULA
