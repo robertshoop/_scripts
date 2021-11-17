@@ -1,4 +1,4 @@
-# WORK IN PROGRESS
+# WORK IN PROGRESS - v1
 #!/bin/bash
 # Using Valve's documentation from https://developer.valvesoftware.com/wiki/SteamCMD to create this script
 # Tested script on Ubuntu 21.10 with latest updates as of 11-16-2021
@@ -24,7 +24,7 @@ sudo apt install steamcmd -y
 sudo /usr/games/steamcmd +force_install_dir /usr/games/valheim +login anonymous +app_update 896660 validate +quit
 
 # Backup the /usr/games/valheim/start_server.sh file before making changes to it
-sudo cp /usr/games/valheim/start_server.sh /usr/games/valheim/start_server_backup.sh
+sudo cp /usr/games/valheim/start_server.sh /usr/games/valheim/start_server_original.sh
 
 # Asks the user on what they would like to change the server name, world name, password, and port to:
 echo
@@ -63,12 +63,10 @@ echo
 echo "Run /usr/games/valheim/start_server.sh to start your Valheim Dedicated Server!"
 echo
 
-# Asks if the user wants to start the dedicated server
-echo "Do you wish to start the dedicated server now?"
+# Gives the user the command to run the dedicated server
+echo "The server is now setup!"
 echo
-select yn in "Yes" "No"; do
-    case $yn in
-        Yes ) cd /usr/games/valheim/ && ./start_server.sh;;
-        No ) exit;;
-    esac
-done
+echo "To run the dedicated server enter the following command:"
+echo 
+echo "cd /usr/games/valheim/ && ./start_server.sh"
+echo
