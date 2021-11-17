@@ -61,8 +61,6 @@ echo "The Server port is set to:" $valServerPort
 echo "The World name is set to:" $valWorldName
 echo "The password is set to:" $valServerPassword
 echo
-echo "Run /usr/games/valheim/start_server.sh to start your Valheim Dedicated Server!"
-echo
 
 # Gives the user the command to run the dedicated server
 echo "The server is now setup!"
