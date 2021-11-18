@@ -1,7 +1,7 @@
 ﻿# Assign the PSTN calling licnese to the user 
 Set-MsolUserLicense -UserPrincipalName USERNAME@DOMAINNAME.TLD -AddLicense "TENANT:MCOPSTN1"
 
-# Assigns the user to the Seattle Emergency MS Teams Policy for E911
+# Assigns the user to the Emergency MS Teams Policy for E911
 Grant-CsTeamsEmergencyCallingPolicy -Identity USERNAME@DOMAINNAME.TLD -PolicyName "NAME_OF_ECP_POLICY_NAME"
 
 #Enables Enterprise Voice and Hosted Voicemail
