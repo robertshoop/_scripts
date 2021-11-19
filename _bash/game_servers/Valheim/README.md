@@ -1,2 +1,2 @@
 # Install Valheim Server
-On various *nix distrobutions.
+On various *nix distrobutions..
