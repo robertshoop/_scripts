@@ -1,0 +1,9 @@
+-- Change SSH keys --
+Perform the following to change an SSH key on a server:
+
+rm /etc/ssh/ssh_host_*
+dpkg-reconfigure openssh-server
+Update clients
+
+-- Generate SSH keys for a server --
+
