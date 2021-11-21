@@ -1,0 +1,4 @@
+[webservers]
+192.168.1.118 ansible_user=user
+192.168.1.122 ansible_user=user
+192.168.1.178 ansible_user=user
