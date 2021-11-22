@@ -1,0 +1,8 @@
+# Use this script to install the sudo package on a Debian 11 box and then grant a user sudo permissions:
+# Run as root (if this is the first time running it) or a user with root / sudo permissions.
+
+apt-get install sudo -y
+/sbin/adduser username sudo
+
+Now, log out and then log in with the same user.
+Open a terminal and run sudo echo 'Hello, world!', enter your user password and that's it!
