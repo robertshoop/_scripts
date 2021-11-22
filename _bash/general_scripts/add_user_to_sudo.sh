@@ -14,5 +14,5 @@ apt-get install sudo -y
 /sbin/adduser $sudoUserName sudo
 echo
 echo "The user $sudoUserName will need to log out and then back into the server to have sudo permissions."
-echo "As a test the user (afer logging back in) can run sudo echo 'Hello, world!' (including single quotes) to test sudo permissions"
+echo "As a test have $sudoUserName run ""sudo echo 'Hello, world!'"" (without double quotes) to test sudo permissions"
 echo
