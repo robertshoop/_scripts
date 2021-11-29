@@ -1,0 +1,4 @@
+# Joining a Mac to the domain
+https://github.com/timetravlr/Ansible/blob/master/Mac_playbooks/domainjoin-mac.yml
+
+#
