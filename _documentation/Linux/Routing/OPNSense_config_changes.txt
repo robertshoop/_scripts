@@ -1,3 +1,4 @@
+# Used for reference as well - https://homenetworkguy.com/how-to/configure-wan-and-nat-port-forward-rules-in-opnsense/
 Changes to allow redirection of internal DNS to external and then back to the internal network:
 
 * Log into OPNSense
