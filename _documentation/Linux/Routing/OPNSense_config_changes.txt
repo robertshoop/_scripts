@@ -1,0 +1,9 @@
+Changes to allow redirection of internal DNS to external and then back to the internal network:
+
+* Log into OPNSense
+* Go to Services > Unbound DNS > General
+* Check "Register DHCP static mappings"
+* Click Save and then Apply Changes
+* Go to Firewall > Settings > Advanced
+* Check "Reflection for port forwards" and "Automatic outbound NAT for Reflection"
+* Click Save and then Apply Changes
