@@ -1,4 +1,4 @@
-# Run the following
+# Run the following in terminal
 ssh-keygen -b 4096 -t rsa -f id_rsa
 
 # Copy id_rsa.pub to the machine you wish to access the machine you created the certificates on
